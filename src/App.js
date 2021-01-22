@@ -6,16 +6,6 @@ document.body.style.height="100vh"
 document.body.style.minHeight=`${initalHeight}px`
 document.body.style.width=initialWidth
 const weekday = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-/*function makeid(length) {
-  var result           = '';
-  var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-  var charactersLength = characters.length;
-  for ( var i = 0; i < length; i++ ) {
-     result += characters.charAt(Math.floor(Math.random() * charactersLength));
-  }
-  return result;
-}
-const sessionToken=(makeid(10));*/
 
 function App() {
   const [data,setData]=useState(null)
