@@ -97,6 +97,7 @@ function App() {
   
   return (
 <div className="containers">
+  <div className="background-image"></div>
   <div className="wheater-container">
     <div className="search-container">
       <form onSubmit={searchCity} className="search-box">

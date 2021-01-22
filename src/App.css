@@ -21,20 +21,33 @@ button{
 background-color: transparent;
 border: none;
 }
-body{
-  background: url("./Images/pexels-guilherme-rossi-1755683.jpg");
+
+.background-image{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  z-index: -1;
+  background: url("Images/pexels-philippe-donn-1257860.jpg");
   background-size: cover;
 }
+
+/*body{ 
+  background: url("./Images/pexels-philippe-donn-1257860.jpg");
+  background-size: cover;
+}*/
 #root{
   height: 100%;
+  min-height: 600px;
 }
 
 .containers{
   height: 100%;
-  position: relative;
   width: 100%;
-  
+  position: relative;
+  overflow: hidden; 
 }
+
 
 /*Weather main data*/
 .wheater-container{
@@ -82,16 +95,17 @@ body{
 .city{
   padding-top: 1.5rem;
   padding-bottom: 5%;
+  margin-bottom: 0;
 }
 .main-temp{
   position: relative;
-  padding-top: 5%;
+  padding-top: 1%;
 }
 .main-temp .main-text{
   font-size: 3.5rem;
 }
 .main-text{
-  font-size:2rem;
+  font-size:1.5rem;
   line-height: 1;
 }
 .sub-text{
@@ -240,4 +254,23 @@ body{
 .details-text{
   color: #010001;
   font-size: 1.5rem;
+}
+
+
+/*Desktop adjustments */
+
+@media(min-width:768px) and (min-aspect-ratio:1/1){
+
+  .forecast-container p {
+    margin-bottom: 0.5%;
+  }
+  .days-container{
+    padding-top: 0%;
+  }
+
+  .background-image{
+    background:url("Images/pexels-philippe-donn-1169754.jpg");
+    background-size:cover;
+  }
+  
 }
