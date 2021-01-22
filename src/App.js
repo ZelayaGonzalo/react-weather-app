@@ -66,12 +66,6 @@ function App() {
     setData(data)
   }
 
-  /*async function loadData(){
-    const response=await fetch("https://api.openweathermap.org/data/2.5/weather?q=Salta&units=metric&appid=c0e154dd9b98a25155bb3d7883758ba1")
-    const data=await response.json()
-    setData(data)
-  }
-*/
   useEffect(()=>{
     firstLoad()
   },[])
@@ -184,16 +178,5 @@ function App() {
 </div>
   )
 }
-/*Icons
-<i class="fas fa-bolt"></i>
-<i class="fas fa-cloud"></i>
-<i class="fas fa-sun"></i>
-<i class="fas fa-cloud-sun"></i>
-<i class="fas fa-cloud-showers-heavy"></i>
-<i class="fas fa-cloud-sun-rain"></i>
-<i class="fas fa-snowflake"></i>
-<i class="fas fa-smog"></i>
-
-*/
 
 export default App;
