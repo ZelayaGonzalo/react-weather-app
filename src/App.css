@@ -1,38 +1,243 @@
-.App {
-  text-align: center;
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  color:white;
+}
+ol,ul,li{
+  list-style: none;
+}
+input{
+  height: 100%;
+  font-size: 1rem;
+  width: 90%;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding-left: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button{
+background-color: transparent;
+border: none;
+}
+body{
+  background: url("./Images/pexels-guilherme-rossi-1755683.jpg");
+  background-size: cover;
+}
+#root{
+  height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.containers{
+  height: 100%;
+  position: relative;
+  width: 100%;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*Weather main data*/
+.wheater-container{
+  margin: 0%;
+  padding: 0;
+  display: block;
+  width: 100%;
+  height: 40%;
+  font-size: 1.5rem;
+  position: relative;
+}
+
+/*Search bar*/
+.wheater-container .search-container{
+  position: relative;
+  height: 10%;
+  top:3%;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+}
+.search-box{
+  font-size: 1rem;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid;
+  width: 80%;
+  position: relative;
+}
+.search-box .fas{
+  font-size: 1.4rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0;
+}
+
+/*Search bar end*/
+
+.data{
+  text-align: center;
+  height: 100%;
+}
+.city{
+  padding-top: 1.5rem;
+  padding-bottom: 5%;
+}
+.main-temp{
+  position: relative;
+  padding-top: 5%;
+}
+.main-temp .main-text{
+  font-size: 3.5rem;
+}
+.main-text{
+  font-size:2rem;
+  line-height: 1;
+}
+.sub-text{
+  display: block;
+  font-size: 1rem;
+  line-height: 1;
+  color: #c1c1c1;
+}
+/*Weather main data end*/
+
+
+/* Forecast data */
+
+.forecast{
+  height: 20%;
+}
+.forecast-container{
+ height: 100%;
+ display: block;
+ text-align: left;
+}
+.forecast-container p{
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 0;
+}
+.days-container{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 1 auto;
+  overflow-x: auto;
+  padding-top: 2%;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+
+
+.days-container li{
+  background-color: rgba(0, 0, 0, 0.171);
+  text-align: center;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-width: 12%;
+  width: 12%;
+  height: 40%;
+  max-width: 6.25rem;
+  min-height: 4.9rem;
+  max-height: 5.25rem;
+  border-radius: 6.25rem;
+  border: 1px solid white;
+  outline: none;
+  overflow-x: auto;
+  margin-left: 3%;
+  
+}
+.days-container ::-webkit-scrollbar{
+  display: none;
+}
+.day-frame{
+  display: flex;
+  flex-direction: column;
+}
+.day-frame .fas{
+  padding-top: 20%;
+  font-size: 1rem; 
+}
+.day-frame p{
+  font-size: 0.8rem;
+  padding-top: 10%;
 }
 
-.App-link {
-  color: #61dafb;
+@media (min-width:700px){
+  .days-container li{
+    background-color: rgba(0, 0, 0, 0.171);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+    width: 17%;
+    height: 60%;
+    max-width: 100px;
+    min-height: 95px;
+    max-height: 100px;
+    border-radius: 100px;
+    border: 1px solid white;
+    outline: none;
+    overflow-x: auto;
+    margin-left: 0%;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/*End of forecast data*/
+
+
+/*Details*/
+.details{
+  margin: 0%;
+  padding: 0;
+  display: block;
+  width: 100%;
+  height: 40%;
+  background: rgba(255, 255, 255, 0.623);
+  border-radius: 50px 50px 0 0;
+}
+
+.details-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.details-container .side{
+  width: 50%;
+  height: 100%;
+}
+
+.details-container .side .details-frame{
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+
+.details-item{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.details-title{
+  color:#706C61;
+  font-size: 0.9rem;
+}
+.details-text{
+  color: #010001;
+  font-size: 1.5rem;
 }
