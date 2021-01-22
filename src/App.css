@@ -28,7 +28,7 @@ border: none;
   width: 100%;
   overflow: hidden;
   z-index: -1;
-  background: url("Images/pexels-philippe-donn-1257860.jpg");
+  background: url("Images/pexels-philippe-donn-1257860-compressed.jpg");
   background-size: cover;
 }
 
@@ -64,7 +64,7 @@ border: none;
 .wheater-container .search-container{
   position: relative;
   height: 10%;
-  top:3%;
+  top:10%;
   display: flex;
   justify-content: center;
 }
@@ -93,7 +93,7 @@ border: none;
   height: 100%;
 }
 .city{
-  padding-top: 1.5rem;
+  padding-top: 2rem;
   padding-bottom: 5%;
   margin-bottom: 0;
 }
@@ -269,7 +269,7 @@ border: none;
   }
 
   .background-image{
-    background:url("Images/pexels-philippe-donn-1169754.jpg");
+    background:url("Images/pexels-philippe-donn-1169754-compressed.jpg");
     background-size:cover;
   }
   
