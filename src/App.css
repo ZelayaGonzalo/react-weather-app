@@ -93,9 +93,10 @@ border: none;
   height: 100%;
 }
 .city{
-  padding-top: 2rem;
-  padding-bottom: 5%;
+  padding-top: 3.2rem;
+  padding-bottom: 10%;
   margin-bottom: 0;
+  line-height: 1;
 }
 .main-temp{
   position: relative;
@@ -260,6 +261,9 @@ border: none;
 /*Desktop adjustments */
 
 @media(min-width:768px) and (min-aspect-ratio:1/1){
+  .city{
+    padding-bottom: 5%;
+  }
 
   .forecast-container p {
     margin-bottom: 0.5%;
@@ -272,5 +276,4 @@ border: none;
     background:url("Images/pexels-philippe-donn-1169754-compressed.jpg");
     background-size:cover;
   }
-  
 }
